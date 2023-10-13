@@ -1,0 +1,7 @@
+.hugo_build.lock
+public/
+resources/
+.vscode/
+node_modules/
+.env
+package-lock.json
