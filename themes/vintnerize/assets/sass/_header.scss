@@ -1,7 +1,11 @@
 .main-header {
-    background-color: black !important;
-    color: yellow !important;
+    //background-color: black;
+    color: yellow;
     height: 100vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(rgb(78, 9, 9), 0.8),
+        rgba(grey, 0.8)), url(/img/vintnerize-background.jpg);
 
     position: relative;
 
