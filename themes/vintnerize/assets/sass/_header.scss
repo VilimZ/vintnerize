@@ -1,13 +1,15 @@
 .main-header {
     //background-color: black;
-    color: yellow;
+    color: navajowhite;
     height: 100vh;
     background-image: linear-gradient(
         to right bottom,
         rgba(rgb(78, 9, 9), 0.8),
         rgba(grey, 0.8)), url(../img/vintnerize-background.jpg);
 
+    text-align: center;
     position: relative;
+
 
 
 
@@ -15,7 +17,12 @@
         position: absolute;
         top: 40%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -30%);
         text-align: center;
+        height: 50%;
+
+   
+
+        //border: solid 2px black; //Temp
     }
   }

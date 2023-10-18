@@ -1,6 +1,9 @@
 .manu-brands {
+
+    position: relative;
+    top: 20%;
     
-    
+    //border: solid 2px black; //Temp
 
     ul, li, a {
         text-decoration: none;
@@ -11,5 +14,11 @@
 }
 
 .discover-arrow {
-    padding-bottom: 10%;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0);
+
+    //border: solid 2px black; //Temp
 }
