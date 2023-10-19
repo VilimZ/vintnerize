@@ -2,10 +2,33 @@
 .section {
     height: 100vh;
     position: relative;
+
+
 }
+
+.section-info{
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    &-cells {
+        width: 45%;
+        height: 45%;
+
+        border: solid 2px black; //Temp
+    }
+
+    
+    border: solid 2px black; //Temp
+}
+
+
 
 #section-pirathon {
     background-color: grey;
+    display: flex;
 }
 #section-gaelic {
     background-color: orange;
