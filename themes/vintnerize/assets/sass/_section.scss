@@ -7,18 +7,39 @@
 }
 
 .section-info{
-    margin: 5%;
+    margin: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2%;
+    font-style: italic;
+
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 20rem 4rem rgba(rgb(60, 59, 59), .50);
     
 
     &-cells {
-        width: 45%;
-        height: 45%;
+        width:50%;
+        height: 80%;
+        padding: 2%;
+
+
+       
+        h2 {
+            text-align: center;
+            //top: 10%;
+            position: relative;
+        }
+        p {
+            position: relative;
+            top: 15%;
+            font-size: 1.7em;
+        }
 
         border: solid 2px black; //Temp
     }
+    
 
     
     border: solid 2px black; //Temp
@@ -27,7 +48,7 @@
 
 
 #section-pirathon {
-    background-color: grey;
+    background-color: white;
     display: flex;
 }
 #section-gaelic {
@@ -38,4 +59,16 @@
 }
 #section-lindsay {
     background-color: aquamarine;
+}
+
+a.read-more {
+
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+
+    &:hover {
+        color: red;
+    }
+
 }
