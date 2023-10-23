@@ -26,16 +26,21 @@
 
 
 
-    border-radius: 3px;
+/*     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 20rem 4rem rgba(rgb(60, 59, 59), .50);
+    box-shadow: 0 20rem 4rem rgba(rgb(60, 59, 59), .50); */
 
 
     &-cells {
         width: 50%;
         height: 90%;
         padding: 2%;
-        t
+        overflow: hidden;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
 
 
 
@@ -47,7 +52,7 @@
 
         p {
             position: relative;
-            top: 30%;
+           // top: 30%;
             font-size: 1.5rem;
             
         }
@@ -55,15 +60,16 @@
         @media screen and (max-width: 400px) {
             & {
                 width: 98%;
+                max-height: 50%;
             }
         }
 
-        //border: solid 2px black; //Temp
+        border: solid 2px black; //Temp
     }
 
 
 
-   // border: solid 2px rgb(155, 8, 8); //Temp
+    border: solid 2px rgb(155, 8, 8); //Temp
 }
 
 
@@ -73,26 +79,11 @@
 
     display: flex;
     
-    .pirathon-cells {
-        
-       overflow: hidden; 
-       max-width: 100%;
-       max-height: 100%;
-       //object-fit: cover;
-      
-        /* 
-        background-image: linear-gradient(
-            to right bottom,
-            rgba(rgb(49, 4, 4), 0.4),
-            rgba(black, 0.9)), url(../img/Pirathon.png);
-        background-repeat: no-repeat;    
-        background-position: center;
-        background-size: cover;*/
-    } 
+
 }
 
 #section-gaelic {
-    background-color: orange;
+    background-color: white;
 }
 
 #section-lanzerac {
@@ -114,3 +105,20 @@ a.read-more {
     }
 
 }
+
+div.section-info > div.section-info-cells > a > img {
+        
+    overflow: hidden; 
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+   
+     /* 
+     background-image: linear-gradient(
+         to right bottom,
+         rgba(rgb(49, 4, 4), 0.4),
+         rgba(black, 0.9)), url(../img/Pirathon.png);
+     background-repeat: no-repeat;    
+     background-position: center;
+     background-size: cover;*/
+ } 
