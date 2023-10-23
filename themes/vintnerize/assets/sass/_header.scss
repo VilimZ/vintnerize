@@ -4,9 +4,11 @@
     height: 100vh;
     background-image: linear-gradient(
         to right bottom,
-        rgba(rgb(78, 9, 9), 0.8),
-        rgba(grey, 0.8)), url(../img/vintnerize-background.jpg);
-
+        rgba(rgb(49, 4, 4), 0.4),
+        rgba(black, 0.9)), url(../img/vintnerize-background.jpg);
+    background-repeat: no-repeat;    
+    background-position: center;
+    background-size: cover;
     text-align: center;
     position: relative;
 

@@ -5,5 +5,9 @@
 <!-- Vintenerize Css -->
 <link rel="stylesheet" href="/css/style.css">
 
+<!--  SASS  -->
+{{ $opts := dict "transpiler" "dartsass" "targetPath" "css/style.css" }}
 {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify }}
 <link rel="stylesheet" href="{{ $style.Permalink }}"> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
