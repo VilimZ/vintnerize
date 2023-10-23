@@ -6,14 +6,23 @@
 }
 
 .section-info {
-    margin: 2%;
+    //margin: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2%;
     font-style: italic;
 
+    // X-Small devices (portrait phones, less than 576px)
+    @media (max-width: 400px) {
+        & {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
 
+    }
 
 
 
@@ -24,8 +33,9 @@
 
     &-cells {
         width: 50%;
-        height: 80%;
+        height: 90%;
         padding: 2%;
+        t
 
 
 
@@ -37,23 +47,48 @@
 
         p {
             position: relative;
-            top: 15%;
-            font-size: 1.7em;
+            top: 30%;
+            font-size: 1.5rem;
+            
         }
 
-        border: solid 2px black; //Temp
+        @media screen and (max-width: 400px) {
+            & {
+                width: 98%;
+            }
+        }
+
+        //border: solid 2px black; //Temp
     }
 
 
 
-    border: solid 2px rgb(155, 8, 8); //Temp
+   // border: solid 2px rgb(155, 8, 8); //Temp
 }
 
 
 
 #section-pirathon {
     background-color: white;
+
     display: flex;
+    
+    .pirathon-cells {
+        
+       overflow: hidden; 
+       max-width: 100%;
+       max-height: 100%;
+       //object-fit: cover;
+      
+        /* 
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(rgb(49, 4, 4), 0.4),
+            rgba(black, 0.9)), url(../img/Pirathon.png);
+        background-repeat: no-repeat;    
+        background-position: center;
+        background-size: cover;*/
+    } 
 }
 
 #section-gaelic {

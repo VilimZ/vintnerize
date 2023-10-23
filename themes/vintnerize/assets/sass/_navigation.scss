@@ -2,7 +2,20 @@
 
     position: relative;
     top: 20%;
+
+    @media screen and (max-width: 400px) {
+        .menu-brands {
     
+            font-size: 2rem;
+    
+            ul,
+            li,
+            a {
+                font-size: 2rem;
+            }
+        }
+    
+    }
     
     //border: solid 2px black; //Temp
 
@@ -24,8 +37,8 @@
     a {
         display: flex;
         flex-direction: column;
-        justify-content: baseline;
         align-items: center;
+        color: navajowhite;
     }
 
 
