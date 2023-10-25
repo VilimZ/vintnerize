@@ -3,7 +3,7 @@
     position: relative;
     top: 20%;
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 576px) {
         .menu-brands {
     
             font-size: 2rem;
@@ -44,8 +44,9 @@
         color: navajowhite;
     }
 
-    @media screen and (max-width: 400px) {
-        bottom: 5%;
+    @media screen and (max-width: 576px) {
+        bottom: 1%;
+        display: none;
     }
 
 

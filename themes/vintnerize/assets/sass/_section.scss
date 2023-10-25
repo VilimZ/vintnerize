@@ -12,21 +12,21 @@
     justify-content: center;
     padding: 2%;
     font-style: italic;
-    
-    & >  h2 {
+
+    &>h2 {
         position: absolute;
         top: 10%;
 
-        @media screen and (max-width: 400px) {
-            
-                top: 0;
+        @media screen and (max-width: 576px) {
+
+            top: 0;
         }
-          
-        
+
+
     }
 
     // X-Small devices (portrait phones, less than 576px)
-    @media (max-width: 400px) {
+    @media (max-width: 576px) {
         & {
             display: flex;
             flex-direction: column;
@@ -38,7 +38,7 @@
 
 
 
-/*     border-radius: 3px;
+    /*     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 20rem 4rem rgba(rgb(60, 59, 59), .50); */
 
@@ -46,9 +46,9 @@
     &-cells {
         width: 50%;
         height: 90%;
-        padding: 2%;
+        //padding: 0 2%;
         overflow: hidden;
-        
+
         display: flex;
         align-items: center;
         justify-content: center;
@@ -64,15 +64,25 @@
 
         p {
             position: relative;
-           // top: 30%;
+            padding: 0 2%;
             font-size: 1.5rem;
-            
+
         }
 
-        @media screen and (max-width: 400px) {
+
+
+        @media screen and (max-width: 576px) {
             & {
                 width: 98%;
                 max-height: 50%;
+            }
+
+            &-txt {
+                height: 60%;
+            }
+
+            &-img {
+                height:30%;
             }
         }
 
@@ -90,20 +100,25 @@
     background-color: white;
 
     display: flex;
-    
+
 
 }
 
 #section-gaelic {
     background-color: white;
+    display: flex;
 }
 
 #section-lanzerac {
     background-color: white;
+
+    display: flex;
 }
 
 #section-lindsay {
     background-color: white;
+
+    display: flex;
 }
 
 a.read-more {
@@ -116,16 +131,17 @@ a.read-more {
         color: red;
     }
 
+
 }
 
-div.section-info > div.section-info-cells > a > img {
-        
-    overflow: hidden; 
+div.section-info>div.section-info-cells>a>img {
+
+    overflow: hidden;
     max-width: 100%;
     max-height: auto;
     object-fit: cover;
-   
-     /* 
+
+    /* 
      background-image: linear-gradient(
          to right bottom,
          rgba(rgb(49, 4, 4), 0.4),
@@ -133,4 +149,6 @@ div.section-info > div.section-info-cells > a > img {
      background-repeat: no-repeat;    
      background-position: center;
      background-size: cover;*/
- } 
+}
+
+.section-info {}
