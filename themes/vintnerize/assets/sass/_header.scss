@@ -54,8 +54,20 @@
 
         @media screen and (max-width: 576px) {
 
-            height: 70%;
-            padding-top: 30px;
+            height: 85%;
+            width: 100%;
+            
+            padding-top: 10px;
+            transform: translate(-50%, -35%);
+            
+
+            h3 {
+                margin: 1.3rem 0;
+            }
+
+            & > div > ul > li > a {
+                font-size: 1.3rem;
+            }
         }
 
    
