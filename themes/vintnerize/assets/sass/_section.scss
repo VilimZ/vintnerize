@@ -15,7 +15,7 @@
 
     &>h2, &-title {
         position: absolute;
-        top: 10%;
+        top: 8%;
         background-image: linear-gradient(to right bottom, goldenrod, rgb(156, 143, 109) );
         padding: 2px 8px;
 
@@ -48,7 +48,7 @@
     &-cells {
         width: 50%;
         height: 90%;
-        //padding: 0 2%;
+        padding: 5px;
         overflow: hidden;
 
         display: flex;
@@ -71,6 +71,19 @@
             font-size: 1.5rem;
 
         }
+        &-img > a > img:hover,
+        &-img > a > img:focus {
+            opacity: 0.5;
+            transform: scale(1.1);
+            overflow: hidden;
+            transition: all .5s;
+        }
+        &-img > a > img:not(:hover):not(:focus) {
+            overflow: hidden;
+            opacity: 1;
+            transform: scale(1);
+            transition: all .5s;
+        }
 
 
 
@@ -79,6 +92,7 @@
                 width: 98%;
                 //max-height: 50%;
                 min-height: max-content;
+                padding: 10px 0 0 0 ;
                 
             }
 
@@ -87,12 +101,9 @@
                 //height: 60%;
             }
 
-            &-img {
-                //height:30%;
-            }
 
             p {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
 
             h2 {
